@@ -29,14 +29,14 @@ export default {
     data () {
         return {
             content: '',
-            reply: '未找到',  
+            reply: '未找到',
             frequency: 0,
             warn: false,
             showEmoji: false,
         };
     },
     computed: {
-        ...mapState([   
+        ...mapState([
             'selectId',
             'emojis'
         ]),
@@ -61,7 +61,11 @@ export default {
                   }, 1000)
                }else{
                     if(this.selectedChat.user.name === '机器人'){
-                        this.$http.get(`https://zhaoplus.com/api/AI?search=${this.content}`).then(res => {
+                        this.$http.post('http://www.tuling123.com/openapi/api', {
+                          key: '',
+                          info: this.content,
+                          userid: '123456'
+                        }).then(res => {
                             this.reply = res.data.result.text
                             if(this.content.includes('/:')){
                                 this.reply = '嘻嘻'
