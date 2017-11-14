@@ -1,25 +1,25 @@
 <template>
 	<div class="resume">
 		<div class="about">
-			<h1 class="name">韩超男</h1>
-			<div class="intention">求职意向：</br><span>web前端工程师</span></div>
+			<h1 class="name">刘欣</h1>
+			<div class="intention">职位：<span>web前端工程师</span></div>
 			<div class="info">
-			    <div class="info-title">个人信息：</div>
+			    <div class="info-title">资料：</div>
 				<div class="info-item">
 					<i class="icon school"></i>
-					<span>东华理工大学(本科)</span>
+					<span>竹云科技(成都分公司)</span>
 				</div>
 				<div class="info-item">
 					<i class="icon major"></i>
-					<span>软件工程(2018毕业)</span>
+					<span>成都</span>
 				</div>
 				<div class="info-item">
 					<i class="icon phone"></i>
-					<span>18174019297</span>
+					<span>18382288321</span>
 				</div>
 				<div class="info-item">
 					<i class="icon email"></i>
-					<span>1062384845@qq.com</span>
+					<span>3358621@qq.com</span>
 				</div>
 			</div>
 		</div>
@@ -30,28 +30,27 @@
                     <span class="name">技术栈</span>
                 </div>
                 <div class="technology-item">
-                    <span>【前端】</span>HTML/HTML5 &nbsp CSS/CSS3 &nbsp JavaScript(ES6,ES5) &nbsp SASS &nbsp Stylus &nbsp Vue.JS &nbsp AJAX &nbsp jQuery &nbsp 微信小程序 &nbsp Babel
+                    <span>【前端】</span>HTML/HTML5、CSS/CSS3、JavaScript(ES6,ES5)、SCSS、Gulp、Vue.JS、jQuery、模板引擎、混合开发、浏览器插件
                 </div>
                 <div class="technology-item">
-                    <span>【后端】</span>Node.js (express)
+                    <span>【后端】</span>Linux
                 </div>
                 <div class="technology-item">
-                    <span>【数据库】</span>MongoDB
+                    <span>【数据库】</span>MySQL
                 </div>
                 <div class="technology-item">
-                    <span>【自动化构建】</span>Webpack
+                    <span>【自动化构建】</span>Webpack、Gulp
                 </div>
                 <div class="technology-item">
-                    <span>【版本管理】</span>git
-                </div>         
+                    <span>【版本管理】</span>git、SVN
+                </div>
             </div>
             <div class="power-item">
                 <div class="title">
                     <i class="icon evaluation"></i>
                     <span class="name">个人评价</span>
                 </div>
-                <div class="myevaluation">本人是软件学院的学生，在校学习了多门编程语言，有良好的编程思想。除了学校课程
-                   以外自学能力较强，能独立思考，独立解决问题，也会经常逛技术社区，学习好的分享技术.技术发展太快，我会以更开发的心态去接受新技术，不断扩展自己。我相信自己可以做好本职工作。我相信自己可以很快的融入公司的技术团队。
+                <div class="myevaluation">开发过跨平台框架，乐于创建优秀的web界面，尤其是对界面的交互效果情有独钟，曾经担任过项目经理，对用户体验有很强烈的追求；轻度以上的代码洁癖；能独立承担跨平台APP和WEB的前端开发工作。会服务端，Linux，MySQL，能够基于linux服务器搭建Git版本控制系统。热爱前端，勤于学习，平均每天晚上3个小时的学习时间，经常活跃掘金，github，平时偶尔看看简书，欣赏生活。
                 </div>
             </div>
 		</div>
@@ -117,7 +116,7 @@
     .power
         flex: 1
         overflow-y: auto
-        padding: 70px 50px 30px 50px
+        padding: 30px
         background-color: #fff
         .power-item
             color: rgb(36,70,100)
@@ -156,5 +155,8 @@
                 span
                     display: inline-block
                     font-size: 18px
+            .myevaluation
+                text-indent: 2em
+                line-height 1.5
 
 </style>
